@@ -34,6 +34,7 @@ RCT_EXPORT_METHOD(
     // RCTLogInfo(@"Load URL %@", urlString);
     // RCTLogInfo(@"Load meetOptions %@", meetOptions);
     // RCTLogInfo(@"Load meetOptions VideoOnly %@", meetOptions[@"audioOnly"]);
+     RCTLogInfo(@"Feature Flags %@", meetFeatureFlags);
 
     JitsiMeetUserInfo * _userInfo = [[JitsiMeetUserInfo alloc] init];
     if (userInfo != NULL) {
