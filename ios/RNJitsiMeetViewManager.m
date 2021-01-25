@@ -79,6 +79,7 @@ RCT_EXPORT_METHOD(
             [builder setFeatureFlag:@"toolbox.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"toolbox.enabled"] boolValue]];
             [builder setFeatureFlag:@"video-share.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"video-share.enabled"] boolValue]];
             [builder setFeatureFlag:@"welcomepage.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"welcomepage.enabled"] boolValue]];
+            [builder setFeatureFlag:@"filmstrip.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"filmstrip.enabled"] boolValue]];
 
             builder.userInfo = _userInfo;
         }];
