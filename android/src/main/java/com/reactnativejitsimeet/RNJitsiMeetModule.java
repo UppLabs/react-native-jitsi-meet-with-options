@@ -61,7 +61,7 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                         .setAudioOnly(meetOptions.getBoolean("audioOnly"))
                         .setVideoMuted(meetOptions.getBoolean("videoMuted"))
                         .setUserInfo(_userInfo)
-
+                        
                         .setFeatureFlag("add-people.enabled", meetFeatureFlags.getBoolean("add-people.enabled"))
                         .setFeatureFlag("calendar.enabled", meetFeatureFlags.getBoolean("calendar.enabled"))
                         .setFeatureFlag("call-integration.enabled", meetFeatureFlags.getBoolean("call-integration.enabled"))
@@ -82,6 +82,7 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                         .setFeatureFlag("toolbox.enabled", meetFeatureFlags.getBoolean("toolbox.enabled"))
                         .setFeatureFlag("video-share.enabled", meetFeatureFlags.getBoolean("video-share.enabled"))
                         .setFeatureFlag("welcomepage.enabled", meetFeatureFlags.getBoolean("welcomepage.enabled"))
+                        .setFeatureFlag("filmstrip.enabled", meetFeatureFlags.getBoolean("filmstrip.enabled"))
                         .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
                 }
