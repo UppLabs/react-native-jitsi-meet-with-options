@@ -46,7 +46,7 @@ repositories {
 }
 
 dependencies {
-    implementation ('jitsi-meet-custom:jitsi-meet-custom-sdk') {
+    implementation ('jitsi-meet-custom-sdk:1.0.0') {
       transitive = true
     }
 }
