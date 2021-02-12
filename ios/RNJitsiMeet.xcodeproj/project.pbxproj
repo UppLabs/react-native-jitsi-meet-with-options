@@ -3,13 +3,8 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
-
-/* Begin PBXBuildFile section */
-		3EA5F46C25D69B18008B3D27 /* JitsiMeetSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA5F46B25D69B18008B3D27 /* JitsiMeetSDK.xcframework */; };
-		3EA5F46F25D69B2B008B3D27 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA5F46E25D69B2B008B3D27 /* WebRTC.xcframework */; };
-/* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		014A3B5A1C6CF33500B6D375 /* CopyFiles */ = {
@@ -25,8 +20,6 @@
 
 /* Begin PBXFileReference section */
 		014A3B5C1C6CF33500B6D375 /* libRNJitsiMeet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNJitsiMeet.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EA5F46B25D69B18008B3D27 /* JitsiMeetSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = JitsiMeetSDK.xcframework; sourceTree = "<group>"; };
-		3EA5F46E25D69B2B008B3D27 /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WebRTC.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,8 +27,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EA5F46C25D69B18008B3D27 /* JitsiMeetSDK.xcframework in Frameworks */,
-				3EA5F46F25D69B2B008B3D27 /* WebRTC.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +36,6 @@
 		014A3B531C6CF33500B6D375 = {
 			isa = PBXGroup;
 			children = (
-				3EA5F3F225D69093008B3D27 /* Frameworks */,
 				014A3B5D1C6CF33500B6D375 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +46,6 @@
 				014A3B5C1C6CF33500B6D375 /* libRNJitsiMeet.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		3EA5F3F225D69093008B3D27 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3EA5F46B25D69B18008B3D27 /* JitsiMeetSDK.xcframework */,
-				3EA5F46E25D69B2B008B3D27 /* WebRTC.xcframework */,
-			);
-			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
