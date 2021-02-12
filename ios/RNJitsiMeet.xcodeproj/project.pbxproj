@@ -25,8 +25,8 @@
 
 /* Begin PBXFileReference section */
 		014A3B5C1C6CF33500B6D375 /* libRNJitsiMeet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNJitsiMeet.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		96EBEF4C2115B4A400BFE51E /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WebRTC.xcframework; path = "local-jitsi/WebRTC.xcframework"; sourceTree = "<group>"; };
-		96EBEF4D2115B4A500BFE51E /* JitsiMeetSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = JitsiMeetSDK.xcframework; path = "local-jitsi/JitsiMeetSDK.xcframework"; sourceTree = "<group>"; };
+		96EBEF4C2115B4A400BFE51E /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WebRTC.xcframework; sourceTree = "<group>"; };
+		96EBEF4D2115B4A500BFE51E /* JitsiMeetSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = JitsiMeetSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
