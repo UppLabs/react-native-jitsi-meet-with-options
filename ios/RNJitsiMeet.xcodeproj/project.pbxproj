@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3EA5F41225D696FF008B3D27 /* JitsiMeetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA5F41125D696FE008B3D27 /* JitsiMeetSDK.framework */; platformFilter = ios; };
-		3EA5F41425D69716008B3D27 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA5F41325D69716008B3D27 /* WebRTC.framework */; platformFilter = ios; };
+		3EA5F46C25D69B18008B3D27 /* JitsiMeetSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA5F46B25D69B18008B3D27 /* JitsiMeetSDK.xcframework */; };
+		3EA5F46F25D69B2B008B3D27 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA5F46E25D69B2B008B3D27 /* WebRTC.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,8 +25,8 @@
 
 /* Begin PBXFileReference section */
 		014A3B5C1C6CF33500B6D375 /* libRNJitsiMeet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNJitsiMeet.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EA5F41125D696FE008B3D27 /* JitsiMeetSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JitsiMeetSDK.framework; sourceTree = "<group>"; };
-		3EA5F41325D69716008B3D27 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		3EA5F46B25D69B18008B3D27 /* JitsiMeetSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = JitsiMeetSDK.xcframework; sourceTree = "<group>"; };
+		3EA5F46E25D69B2B008B3D27 /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WebRTC.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,8 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EA5F41225D696FF008B3D27 /* JitsiMeetSDK.framework in Frameworks */,
-				3EA5F41425D69716008B3D27 /* WebRTC.framework in Frameworks */,
+				3EA5F46C25D69B18008B3D27 /* JitsiMeetSDK.xcframework in Frameworks */,
+				3EA5F46F25D69B2B008B3D27 /* WebRTC.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +61,8 @@
 		3EA5F3F225D69093008B3D27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3EA5F41325D69716008B3D27 /* WebRTC.framework */,
-				3EA5F41125D696FE008B3D27 /* JitsiMeetSDK.framework */,
+				3EA5F46B25D69B18008B3D27 /* JitsiMeetSDK.xcframework */,
+				3EA5F46E25D69B2B008B3D27 /* WebRTC.xcframework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -227,6 +227,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../../node_modules/react-native/React/**",
 					"$(SRCROOT)/../../node_modules/react-native/Libraries/**",
+					"$(SRCROOT)/Frameworks/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -252,6 +253,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../../node_modules/react-native/React/**",
 					"$(SRCROOT)/../../node_modules/react-native/Libraries/**",
+					"$(SRCROOT)/Frameworks/**",
 				);
 				LDFLAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
