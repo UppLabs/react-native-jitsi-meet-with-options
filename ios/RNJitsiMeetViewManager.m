@@ -82,6 +82,10 @@ RCT_EXPORT_METHOD(
             [builder setFeatureFlag:@"filmstrip.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"filmstrip.enabled"] boolValue]];
             [builder setFeatureFlag:@"audio-mute.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"audio-mute.enabled"] boolValue]];
             [builder setFeatureFlag:@"video-mute.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"video-mute.enabled"] boolValue]];
+            [builder setFeatureFlag:@"overflow-menu.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"overflow-menu.enabled"] boolValue]];
+            
+            
+            
             builder.userInfo = _userInfo;
         }];
         [jitsiMeetView join:options];
