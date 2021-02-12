@@ -83,6 +83,9 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                         .setFeatureFlag("video-share.enabled", meetFeatureFlags.getBoolean("video-share.enabled"))
                         .setFeatureFlag("welcomepage.enabled", meetFeatureFlags.getBoolean("welcomepage.enabled"))
                         .setFeatureFlag("filmstrip.enabled", meetFeatureFlags.getBoolean("filmstrip.enabled"))
+                        .setFeatureFlag("audio-mute.enabled", meetFeatureFlags.getBoolean("audio-mute.enabled"))
+                        .setFeatureFlag("audio-mute.enabled", meetFeatureFlags.getBoolean("audio-mute.enabled"))
+                        .setFeatureFlag("video-mute.enabled", meetFeatureFlags.getBoolean("video-mute.enabled"))
                         .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
                 }
