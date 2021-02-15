@@ -18,7 +18,7 @@ import java.util.Map;
 
 
 public class RNJitsiMeetView extends BaseReactView<JitsiMeetViewListener>
-                implements RNOngoingConferenceTracker.OngoingConferenceListener {
+        implements RNOngoingConferenceTracker.OngoingConferenceListener {
 
     /**
      * The {@code Method}s of {@code JitsiMeetViewListener} by event name i.e.
@@ -142,7 +142,7 @@ public class RNJitsiMeetView extends BaseReactView<JitsiMeetViewListener>
         // per setProps() invocation.
         props.putLong("timestamp", System.currentTimeMillis());
 
-        createReactRootView("App", props);
+        createReactRootView("RNJitsiMeet", props);
     }
 
     /**
