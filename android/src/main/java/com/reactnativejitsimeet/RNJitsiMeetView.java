@@ -142,7 +142,7 @@ public class RNJitsiMeetView extends BaseReactView<JitsiMeetViewListener>
         // per setProps() invocation.
         props.putLong("timestamp", System.currentTimeMillis());
 
-        createReactRootView("RNJitsiMeet", props);
+        createReactRootView("App", props);
     }
 
     /**
