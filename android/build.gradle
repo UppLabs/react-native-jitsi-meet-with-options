@@ -36,7 +36,7 @@ android {
 }
 
 repositories {
-  maven { url "file:/local-jitsi" }
+  maven { url "$rootDir/../node_modules/react-native-jitsi-meet/android/local-jitsi" }
   google()
   mavenCentral()
   jcenter()
