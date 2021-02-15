@@ -18,14 +18,14 @@ import java.util.Map;
 
 
 public class RNJitsiMeetView extends BaseReactView<JitsiMeetViewListener>
-        implements RNOngoingConferenceTracker.OngoingConferenceListener {
+                implements RNOngoingConferenceTracker.OngoingConferenceListener {
 
     /**
      * The {@code Method}s of {@code JitsiMeetViewListener} by event name i.e.
      * redux action types.
      */
     private static final Map<String, Method> LISTENER_METHODS
-            = ListenerUtils.mapListenerMethods(JitsiMeetViewListener.class);
+        = ListenerUtils.mapListenerMethods(JitsiMeetViewListener.class);
 
     /**
      * The URL of the current conference.
@@ -168,5 +168,11 @@ public class RNJitsiMeetView extends BaseReactView<JitsiMeetViewListener>
     @Override
     protected void onExternalAPIEvent(String name, ReadableMap data) {
         onExternalAPIEvent(LISTENER_METHODS, name, data);
+    }
+
+    @Override
+    protected void onDetachedFromWindow() {
+        dispose();
+        super.onDetachedFromWindow();
     }
 }
