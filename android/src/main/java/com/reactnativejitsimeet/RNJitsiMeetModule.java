@@ -87,6 +87,8 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                         .setFeatureFlag("audio-mute.enabled", meetFeatureFlags.getBoolean("audio-mute.enabled"))
                         .setFeatureFlag("video-mute.enabled", meetFeatureFlags.getBoolean("video-mute.enabled"))
                         .setFeatureFlag("overflow-menu.enabled", meetFeatureFlags.getBoolean("overflow-menu.enabled")) 
+                        .setFeatureFlag("android.audio-focus.disabled", meetFeatureFlags.getBoolean("android.audio-focus.disabled"))
+                        .setFeatureFlag("resolution", meetFeatureFlags.getInt("resolution") || 360)
                         .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
                 }
