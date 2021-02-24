@@ -83,7 +83,7 @@ RCT_EXPORT_METHOD(
             [builder setFeatureFlag:@"audio-mute.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"audio-mute.enabled"] boolValue]];
             [builder setFeatureFlag:@"video-mute.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"video-mute.enabled"] boolValue]];
             [builder setFeatureFlag:@"overflow-menu.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"overflow-menu.enabled"] boolValue]];
-            [builder setFeatureFlag:@"resolution" withValue:[[meetFeatureFlags objectForKey:@"resolution"] intValue]];
+            // [builder setFeatureFlag:@"resolution" withValue:[[meetFeatureFlags objectForKey:@"resolution"] intValue]];
             
             
             builder.userInfo = _userInfo;
