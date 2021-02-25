@@ -34,8 +34,13 @@ RCT_EXPORT_METHOD(
     // RCTLogInfo(@"Load URL %@", urlString);
     // RCTLogInfo(@"Load meetOptions %@", meetOptions);
     // RCTLogInfo(@"Load meetOptions VideoOnly %@", meetOptions[@"audioOnly"]);
-     RCTLogInfo(@"Feature Flags %@", meetFeatureFlags);
-
+    // RCTLogInfo(@"Feature Flags %@", meetFeatureFlags);
+    NSNumber *resolutionFlag = [meetFeatureFlags objectForKey:@"resolution"];
+    
+    if(resolutionFlag == NULL) {
+        resolutionFlag = @360;
+    }
+    
     JitsiMeetUserInfo * _userInfo = [[JitsiMeetUserInfo alloc] init];
     if (userInfo != NULL) {
       if (userInfo[@"displayName"] != NULL) {
@@ -83,7 +88,7 @@ RCT_EXPORT_METHOD(
             [builder setFeatureFlag:@"audio-mute.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"audio-mute.enabled"] boolValue]];
             [builder setFeatureFlag:@"video-mute.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"video-mute.enabled"] boolValue]];
             [builder setFeatureFlag:@"overflow-menu.enabled" withBoolean:[[meetFeatureFlags objectForKey:@"overflow-menu.enabled"] boolValue]];
-            // [builder setFeatureFlag:@"resolution" withValue:[[meetFeatureFlags objectForKey:@"resolution"] intValue]];
+            [builder setFeatureFlag:@"resolution" withValue:@(resolutionFlag.intValue)];
             
             
             builder.userInfo = _userInfo;
